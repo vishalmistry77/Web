@@ -1,0 +1,48 @@
+body {
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.card {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
+    background: white;
+}
+
+.desc {
+    border-top: 2px solid black;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    background: white;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+.card:hover {
+    box-shadow: 8px 8px 18px red;
+}
+
+.desc:hover {
+    box-shadow: 8px 8px 18px red;
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin: 5px 0 10px 0;
+    color: #666;
+    font-family: Arial, sans-serif;
+}

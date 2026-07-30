@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Grid System</h2>
+        <div class="row"> <!--each row consist of 12units only so make cols accordingly-->
+            <div class= "col-4 bg-success">one</div>
+            <div class="col-8 bg-danger">two</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-5 bg-danger">one</div>
+            <div class="col-md-3 bg-success">two</div>
+            <div class="col-md-4 bg-danger">three</div>
+            <!--this md(ie: medium) use for responsive grid. check grid options section in grid docs bootstrap-->
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-xl-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat maiores architecto ratione hic officiis facere possimus asperiores, voluptate iure, et debitis autem consectetur voluptatem aut rem suscipit ab nesciunt?</div>
+            <div class="col-md-6 col-xl-4 bg-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum est minima eius, aspernatur, asperiores id quos corrupti sint rem doloribus ad suscipit numquam magni exercitationem minus voluptate esse omnis voluptas?</div>
+            <div class="col-md-6 col-xl-4 bg-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae expedita maxime natus, perferendis quibusdam architecto fugiat rem sint quod neque magni quasi laudantium eum sunt explicabo atque nam, molestiae adipisci!</div>
+        </div>
+        <br>
+        <!--columsn(layout) vertical alignment & align-itmens and self and main components-->
+        <div class="row align-items-end">
+            <div class="col-md-6 col-xl-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat maiores architecto ratione hic officiis facere possimus asperiores, voluptate iure, et debitis autem consectetur voluptatem aut rem suscipit ab nesciunt?</div>
+            <div class="col-md-6 col-xl-4 bg-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum est minima eius, aspernatur, asperiores id quos corrupti sint rem doloribus ad suscipit numquam magni exercitationem minus voluptate esse omnis voluptas? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi assumenda possimus quae, magni esse accusantium totam quaerat ipsa ut aut. Quaerat ipsa voluptate non deleniti reprehenderit rerum debitis voluptatem doloribus.</div>
+            <div class="col-md-6 col-xl-4 bg-warning align-self-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae expedita maxime natus, perferendis quibusdam architecto fugiat rem sint quod neque magni quasi laudantium eum sunt explicabo atque nam, molestiae adipisci!</div>
+        </div>
+    </div>
+    <br>
+    <!--Forms-->
+    <!--form control-->
+    <div class="container">
+        <h2>Form Demo</h2>
+        <form> <!-- for mb-3 refer utilies in which see margin and padding section in docs -->
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" placeholder="Email" id="email">
+            </div>
+            <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="password" id="password">
+            </div>
+            <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control-lg" placeholder="Address" id="address">
+            <!--lg means size of form-->
+            </div>
+    <br>
+    <!--select-->
+    <div class="mb-3">
+        <select class="form-select">
+            <option selected>Choose ur city</option>
+            <option value="1">Mumbai</option>
+            <option value="2">Delhi</option>
+            <option value="3">Chennai</option>
+        </select>
+        <option ></option>
+    </div>
+    <br>
+    <!--checbox and radio-->
+        <div class="mb-3 form-check">
+             <label for="agree" class="form-check-label">Agree</label>
+            <input type="checkbox" class="form-check-input" id="agree">
+        </div>
+         <div class="mb-3 form-check">
+             <label for="radio" class="form-check-label">Yes/No</label>
+            <input type="radio" class="form-check-input" id="radio">
+        </div>
+        <!--switches(differnt types of checkbox)-->
+        <div class="form-check form-switch mb-3">
+        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+        <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <!--apply layout to forms like grid options-->
+        <div class="row">
+         <div class="mb-3 col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" placeholder="Email" id="email">
+            </div>
+            <div class="mb-3 col-md-6">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="password" id="password">
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

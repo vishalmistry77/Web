@@ -1,0 +1,31 @@
+/* Can also write height and width both together in one div function also*/
+div{
+    height: 100px;
+    width: 700px;
+    background-color: pink;
+    /*border*/
+    border-width: 5px;
+    border-style: groove;/*many style option available*/
+    border-color: yellow;
+    /* border sides
+    border-top-color: red;
+    border-top-style: dotted; */
+    /*to round the corner*/
+    border-radius: 200px;
+    border-top-right-radius:10px ;
+    /* margin-bottom: 25px;
+    margin-left: 20px; */
+    margin: 10px 20px 30px;
+}
+
+h1{/*border shorthand*/
+    border: 2px dotted blue;
+}
+button{
+    border: 2px solid black;
+    border-radius:20px;
+    /* padding-left: 22px;
+    padding-right: 22px; */
+    padding: 10px 20px;
+
+}

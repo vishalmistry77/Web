@@ -1,0 +1,28 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: inline-grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 30px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: end;
+}
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+} 
+#one{
+    place-self: start;
+    /* grid-column: 1/ span 2; */
+}
+/* #two{
+    grid-row: 1/ 3;
+} */

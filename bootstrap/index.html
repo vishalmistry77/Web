@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dangerous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <!--navbar-->
+    <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png" alt="Bootstrap" width="30" height="24">
+            Bootstrap</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link disabled">Contact</a>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!--containers-->
+    <div class="container-fluid">
+        <h2>Bootstrap demo</h2>
+        <p> Initially available only in English, Wikipedia exists in over 340 languages and is one of the world's most visited websites. The English Wikipedia, with over 7 million articles, remains the largest of the editions, which together comprise more than 66 million articles and attract more than 1.5 billion unique device visits and 13 million edits per month (about five edits per second on average) as of April 2024.[W 1] As of December 2025, over 25% of Wikipedia's traffic comes from the United States, while Japan accounts for nearly 7%, and the United Kingdom, Germany, and Russia each represent a
+            Wikipedia has been praised for enabling the democratization of knowledge, its extensive coverage, unique structure, and culture. Wikipedia has been censored by some national governments, ranging from specific pages to the entire site, sometimes due to its criticism of the government or by content otherwise considered blasphemous.[5][6] Although Wikipedia's volunteer editors have written extensively on a wide variety of topics, the encyclopedia has also been criticized for systemic bias, such as a gender bias against women and a geographical bias against the Global South.[7][8] While the reliability of Wikipedia was frequently criticized in the 2000s, it has improved over time, receiving greater praise from the late 2010s onward.[2][9][10] Articles on breaking news are often accessed as sources for up-to-date information about those events.[11][12]
+            Initially available only in English, Wikipedia exists in over 340 languages and is one of the world's most visited websites. The English Wikipedia, with over 7 million articles, remains the largest of the editions, which together comprise more than 66 million articles and attract more than 1.5 billion unique device visits and 13 million edits per month (about five edits per second on average) as of April 2024.[W 1] As of December 2025, over 25% of Wikipedia's traffic comes from the United States, while Japan accounts for nearly 7%, and the United Kingdom, Germany, and Russia each represent a
+            Wikipedia has been praised for enabling the democratization of knowledge, its extensive coverage, unique structure, and culture. Wikipedia has been censored by some national governments, ranging from specific pages to the entire site, sometimes due to its criticism of the government or by content otherwise considered blasphemous.[5][6] Although Wikipedia's volunteer editors have written extensively on a wide variety of topics, the encyclopedia has also been criticized for systemic bias, such as a gender bias against women and a geographical bias against the Global South.[7][8] While the reliability of Wikipedia was frequently criticized in the 2000s, it has improved over time, receiving greater praise from the late 2010s onward.[2][9][10] Articles on breaking news are often accessed as sources for up-to-date information about those events.[11][12]
+        </p>
+    </div>
+        <!--icons-->
+        <i class="fa-brands fa-microsoft fa-beat" style="color: rgba(2, 215, 250, 1.00);"></i>
+        <span class="material-symbols-outlined">dangerous</span>
+        <br/>
+        <!--buttons-->
+        <button type="button" class="btn btn-outline-info">Warning</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <!--BUTTON WITH FUNTIONALITIES-->
+        <a href="https://www.google.com/" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true"><i class="fa-brands fa-google" style="color: rgba(2, 215, 250, 1.00);"></i></a>
+        <a href="https://x.com/" class="btn btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">X(Twitter)</a>
+        <!--badges(use for notification mostly)-->
+        <h3>Notifications <span class="badge text-bg-secondary">99+</span></h3>
+        <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span></span>
+        </button>
+        <br>
+        <!--alert-->
+        <div class="alert alert-danger" role="alert">Your input is invalid. Please try again.</div>
+        <div class="alert alert-success">Congrats! You got 99%ile. <a href="https://google.com" class="aler-link">Check Now</a></div>
+        <!--button group-->
+        <div class="btn-group">
+            <button class="btn btn-primary">basic</button>
+            <button class="btn btn-outline-secondary">outline style</button>
+            <button class="btn btn-warning">styled colors</button>
+            <a href="https://google.com" class="btn btn-outline-primary">anchor button</a>
+        </div>
+        <br/>
+        <br/>
+        <div class="btn-group" role="group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked>
+            <label for="btncheck1" class="btn btn-outline-secondary">Checkbox1</label>
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label for="btncheck2" class="btn btn-outline-warning">Checkbox2</label>
+        </div>
+        <div class="btn-group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label for="btnradio1" class="btn btn-outline-dark">radiobutton</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label for="btnradio2" class="btn btn-outline-dark">radiobutton</label>
+        </div>
+        <hr>
+        <!--cards-->
+        <div class="card" style= "width: 18rem">
+        <img src="photo.jpg" alt="camera">
+        <div class="card-body">
+            <h5 class="card-title">Photograpy</h5>
+            <p class="card-text"> This is the machine to caputere images</p>
+            <a href="#" class="btn btn-primary">Know More</a>
+        </div>
+        </div>
+        
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

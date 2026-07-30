@@ -1,0 +1,41 @@
+/*Qs1*/
+#container{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid lightseagreen;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    font-size: 50px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 10px;
+}
+/*Qs2*/
+#main{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.sec{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    display: flex;
+   border-radius: 10px;
+   margin-left: 5px;
+   line-height: 50px;
+}

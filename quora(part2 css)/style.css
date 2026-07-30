@@ -1,0 +1,87 @@
+/*universal selector*/
+ *{
+    font-family: 'Courier New';
+ }
+ /* For selecting multiple elements*/
+ h1,h3 {
+    color: #b92b27;
+ }
+ /* ID selector*/
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+/*class selector*/
+.u{
+    background-color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
+}
+/*decandant selector*/
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+nav ul li a{
+    color: hotpink;
+}
+/*adjacent sibling combinator*/
+p+h3{
+    text-decoration: underline;
+}
+.u+ button{
+    background-color: deepskyblue;
+    color: cornsilk;
+}
+/* Child combinator*/
+div > input{
+    background-color: darksalmon;
+}
+/*attribute selector*/
+input[type="text"]{
+      color: green;
+}
+input[type="password"]{
+    color: red;
+}
+input[type]  {
+    background-color: ghostwhite;
+}
+div[id="para"] p{
+    color: green;
+}
+/*pseudo class*/
+button:hover{
+    color: white;
+    background-color: black;
+}
+h3:hover{
+    text-decoration: underline black;
+    cursor: pointer;
+}
+button:active{
+    background-color: #b92b27;
+}
+p:active{
+    font-weight: 700;
+    color: green;
+} 
+input[type="radio"]:checked + label{
+    color: red; 
+    font-weight: bold;
+}
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+/*pseudo element*/
+h1::first-letter{
+    color: green;
+}
+#para::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: #e8bebc;
+}

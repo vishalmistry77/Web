@@ -1,0 +1,9 @@
+.container-fluid p{
+    background-color: aqua;
+}
+p{
+  font-family: "Sour Gummy", sans-serif;
+}
+.btn-outline-success{
+  background-color: yellow;
+}

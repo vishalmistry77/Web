@@ -1,0 +1,14 @@
+div {
+    background-color: lightblue;
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+}
+
+ul {
+    background-color: lightgreen;
+}
+
+li {
+    background-color: bisque;
+}

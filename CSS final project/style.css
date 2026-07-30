@@ -1,0 +1,308 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh; /*100% of viewport height*/
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1; /*remaining space except that 300 width*/
+    border-radius: 1rem;
+    padding: 0 1.25rem 0 1.25rem;
+    overflow: auto;
+    /* flex-wrap: wrap; */
+}
+.media-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+.options{
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    font-size: 1.25rem;   
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    height: 9rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.badge{
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;/*read from MDN*/
+}
+.sticky-nav{
+    position: sticky; /*while scrolling this make nav fixed on top but only while scrolling*/
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    z-index: 10;
+}
+.sticky-nav-icons img{
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item{
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: #ffff;
+}
+@media (max-width: 1000px){ /*media queries (when less than 1000px width then .hide things will vanishes)*/
+    .hide{
+        display: none;
+    }
+}
+@media (max-width: 832px){
+    .sidebar{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 2px solid white ;
+}
+.media-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.album{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: ;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.55rem;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;/*it will make/remove all default style that are given by brower by default*/
+    /*so we can custumize it style and reform it*/
+    background-color: transparent;
+    cursor: pointer;
+}
+/*below two selector you can refer from this url: https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html*/
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
+
+.img{
+    display: flex;
+    /* margin-right: 10rem; */
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
+}
+.info{
+    margin-left: 1rem;
+}
+.plus-icon{
+    margin-left: 1rem;
+}
+.card-title-media{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.card-info-media{
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+.controls{
+    display: flex;
+    width: 380px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.lyrics{
+    width: 2rem;
+    height: 1.7rem;
+     padding: 0 0.5rem 0 0.5rem;
+    opacity: 0.7;
+}
+.player-icons{
+    padding: 0 0.5rem 0 0.5rem;
+    opacity: 0.7;
+}
+.progress-bar-vol{
+    width: 5.9rem;
+    appearance: none;
+    background-color: transparent;
+
+}
+.progress-bar-vol::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+}
+.progress-bar-vol::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #ddd;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    margin-top: -0.30rem;
+}
+.player-icons:hover,.lyrics:hover{
+    opacity: 1;
+}
