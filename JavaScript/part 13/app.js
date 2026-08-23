@@ -115,7 +115,7 @@ function show(cllgArr) {
         console.log(cllg.name); 
         let li = document.createElement("li");
         li.innerText = cllg.name; 
-        list.appendChild(li)
+        list.appendChild(li);
     }
 }
 async function getColleges() { 
