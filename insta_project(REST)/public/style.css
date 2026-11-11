@@ -1,0 +1,26 @@
+h1 {
+    color: #A63A50;
+}
+img{
+    height: 250px;
+    width: 400px;
+    margin-left: 20px;
+}
+h3 {
+    font-style: italic;
+    color: #1E555C;
+    margin-left: 20px;
+}
+
+h4 {
+    color: #8B94A3;
+    margin-left: 20px;
+}
+
+div {
+    background-color: #EDB183;
+}
+a {
+    background-color: plum;
+    margin-left: 20px;
+}

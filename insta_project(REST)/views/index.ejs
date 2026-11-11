@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Instagram</h1>
+    &nbsp;&nbsp;&nbsp;<h3>Feed</h3>
+    <% for(feed of feeds) { %>
+        <div class="feed">
+            <h3 class="user">@<%=feed.username%></h3>
+            <img class="image" src="<%=feed.image%>" alt="Image">
+            <h4 class="caption"><%=feed.caption%></h4>
+            <a href = "http://localhost:8080/feeds/<%=feed.id%>">View in Detail</a>
+            <a href="http://localhost:8080/feeds/<%=feed.id%>/edit">Edit Feed</a>
+            <form method="post" action="/feeds/<%=feed.id%>?_method=DELETE">
+                <button>Delete Feed</button>
+            </form>
+        </div>
+    <%}%>
+    <br>
+    <br>
+    <a href="http://localhost:8080/feeds/new">Create New Feed</a>
+</body>
+</html>
